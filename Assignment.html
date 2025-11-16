@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals</title>
+    
+    <!-- Simple CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        h1 {
+            color: #1a73e8;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0b5394;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        #variablesDemo,
+        #operatorsDemo,
+        #controlDemo {
+            background-color: #e6f0ff;
+            padding: 10px;
+            border: 1px solid #b3d1ff;
+            border-radius: 5px;
+            width: fit-content;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Fundamentals Example Demonstration </h1>
+
+    <!--  Variables Section -->
+    <h2>1. Variables</h2>
+    <p>This example demonstrates variables x and y.</p>
+    <p id="variablesDemo"></p>
+
+    <script>
+      // Variables
+      let x = 5;
+      let y = 10;
+      document.getElementById("variablesDemo").innerHTML = 
+        "The value of x is " + x + " and the value of y is " + y;
+    </script>
+
+    <hr>
+
+    <!--  Operators  -->
+    <h2>2. Operators</h2>
+    <p>This example demonstrates addition, subtraction, multiplication, and division.</p>
+    <p id="operatorsDemo"></p>
+
+    <script>
+      // Operators
+      let sum = x + y;
+      let difference = x - y;
+      let product = x * y;
+      let quotient = x / y;
+
+      document.getElementById("operatorsDemo").innerHTML =
+        "Sum: " + sum + "<br>" +
+        "Difference: " + difference + "<br>" +
+        "Product: " + product + "<br>" +
+        "Quotient: " + quotient;
+    </script>
+
+    <hr>
+
+    <!-- Control Statements -->
+    <h2>3. Control Statements</h2>
+    <p>This example compares two numbers using if-else.</p>
+    <p id="controlDemo"></p>
+
+    <script>
+      // Control Statements
+      let message;
+      if (x > y) {
+        message = "x is greater than y";
+      } else if (x < y) {
+        message = "x is less than y";
+      } else {
+        message = "x and y are equal";
+      }
+
+      document.getElementById("controlDemo").innerHTML = message;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 Practice</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(".button").click(function(){
+        $("#p1").fadeIn();
+        $("#login").fadeIn("slow");
+    });
+    $("#div1").dblclick(function(){
+      $(this).fadeOut();
+    })
+
+  
+      $("#p1").on({
+        mouseenter: function(){
+          $(this).css("background-color", "pink");
+        },
+        mouseleave: function(){
+          $(this).css("background-color","violet");
+        },
+  
+      });
+
+      $("#login").focus(function(){
+        $(this).css("color", "pink");
+      });
+
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id="div1" style="background-color: aquamarine; padding: 20px;">
+    <button class="button">Click me!</button>
+    <p id="p1" style="display:none;">Welcome to Presidential Graduate School</p> <br>
+
+    <div id="login" style="display:none;">
+      Name: <input id="name" type="text" placeholder="Enter Your Name"> <br><br>
+      Password: <input id="password" type="password" placeholder="Enter Your Password"> <br>
+    </div>
+  </div>
+</body>
+</html>

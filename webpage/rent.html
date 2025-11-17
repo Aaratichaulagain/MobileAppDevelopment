@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentIT | Rent</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h2 class="logo">RentIT</h2>
+    <div class="hamburger">&#9776;</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="vehicle.html">Vehicles</a>
+      <a href="rent.html">Rent Now</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Rent a Vehicle</h1>
+    <form class="booking-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      
+      <select required>
+        <option value="">Select Vehicle</option>
+        <option value="car">Car </option>
+        <option value="bike">Bike </option>
+        <option value="scooter">Cycle </option>
+      </select>
+      <button type="submit">Rent Now</button>
+    </form>
+  </main>
+
+</body>
+</html>

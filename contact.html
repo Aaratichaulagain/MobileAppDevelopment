@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - RentIT</title>
+  <link rel="stylesheet" href="contact.css">
+
+
+</head>
+
+<body>
+
+  <div class="dashboard-header">
+    <div class="menu-logo-container">
+      <h1 class="logo">RentIT</h1>
+      <div class="hamburger-menu">&#9776;</div>
+    </div>
+  </div>
+
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p style="text-align:center; margin-bottom: 20px; font-size:14px; color:#555;">
+      Have questions or need help? Drop your message below.
+    </p>
+
+    <form id="contactForm">
+
+      <div class="input-group">
+        <i class="user"></i>
+        <input type="text" id="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="input-group">
+        <i class="form"></i>
+        <input type="email" id="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="input-group textarea-group">
+        <i class="message"></i>
+        <textarea id="message" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="status"></p>
+
+    <div class="info-box">
+      <p><i class="phone"></i> Phone: +977-9800000000</p>
+      <p><i class="email"></i> Email: support@rentit.com</p>
+    </div>
+  </div>
+
+  <script type="module" src="contact.js"></script>
+</body>
+</html>

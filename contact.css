@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(to bottom right, LightBlue, White);
+}
+
+.dashboard-header {
+  background: linear-gradient(90deg, DodgerBlue, Blue);
+  padding: 18px 20px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 255, 0.3);
+}
+
+.menu-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: White;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.hamburger-menu {
+  font-size: 30px;
+  color: White;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hamburger-menu:hover {
+  transform: scale(1.1);
+}
+
+.contact-container {
+  max-width: 450px;
+  margin: 45px auto;
+  background: White;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: Navy;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: DimGray;
+}
+
+.user::before { content: "\f007"; font-family: "FontAwesome"; }
+.form::before { content: "\f0e0"; font-family: "FontAwesome"; }
+.message::before { content: "\f27a"; font-family: "FontAwesome"; }
+.phone::before { content: "\f095"; font-family: "FontAwesome"; }
+.email::before { content: "\f0e0"; font-family: "FontAwesome"; }
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px;
+  padding-left: 40px;
+  border-radius: 12px;
+  border: 1px solid LightGray;
+  background: WhiteSmoke;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: DodgerBlue;
+  background: White;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.4);
+  outline: none;
+}
+
+.textarea-group i {
+  top: 18px;
+}
+
+.input-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-container button {
+  width: 100%;
+  padding: 14px;
+  background: DodgerBlue;
+  color: White;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-container button:hover {
+  background: Blue;
+  transform: translateY(-2px);
+}
+
+#status {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+#status.success { color: Green; }
+#status.error { color: Red; }
+
+.info-box {
+  margin-top: 20px;
+  background: AliceBlue;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: Black;
+}
+
+.info-box i {
+  color: DodgerBlue;
+  margin-right: 8px;
+}

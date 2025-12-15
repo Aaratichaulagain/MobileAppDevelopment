@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RentIT - Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="sideMenu" class="side-menu">
+    <button class="close-btn" onclick="closeMenu()">&times;</button>
+    <a href="profile.html">Profile</a>
+    <a href="settings.html">Settings</a>
+  </div>
+
+
+  <div class="dashboard-header">
+    <div class="menu-logo-container">
+      <h1 class="logo">RentIT</h1>
+      <div class="hamburger-menu" onclick="openMenu()">&#9776;</div>
+    </div>
+  </div>
+
+ 
+  <h2 class="sectionTitle">Booking Vehicles</h2>
+
+  <div class="horizontal-scroll">
+    <div class="dealCard">
+      <p class="dealName">Toyota Corolla</p>
+      
+    </div>
+
+    <div class="dealCard">
+      <p class="dealName">Honda Civic</p>
+     
+    </div>
+
+    <div class="dealCard">
+      <p class="dealName">Yamaha Bike</p>
+      
+    </div>
+  </div>
+
+  
+  <div class="booking-form-container">
+    <h2 class="sectionTitle">Vehicle Booking Form</h2>
+
+    <form id="bookingForm">
+
+      <div class="input-group">
+        <label for="vehicle">Select Vehicle</label>
+        <select id="vehicle" required>
+          <option value="">-- Select Vehicle --</option>
+          <option>Toyota Corolla</option>
+          <option>Honda Civic</option>
+          <option>Yamaha Bike</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Your full name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="+977-98XXXXXXXX" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="input-group">
+        <label for="pickup">Pickup Location</label>
+        <input type="text" id="pickup" placeholder="Enter pickup location" required>
+      </div>
+
+      <div class="input-group">
+        <label for="drop">Drop Location</label>
+        <input type="text" id="drop" placeholder="Enter drop location" required>
+      </div>
+
+      <div class="input-group">
+        <label for="pickupDate">Pickup Date</label>
+        <input type="date" id="pickupDate" required>
+      </div>
+
+      <div class="input-group">
+        <label for="pickupTime">Pickup Time</label>
+        <input type="time" id="pickupTime" required>
+      </div>
+
+      <div class="input-group">
+        <label for="duration">Booking Duration</label>
+        <select id="duration" required>
+          <option value="">-- Select Duration --</option>
+          <option>1 Day</option>
+          <option>2 Days</option>
+          <option>3 Days</option>
+          <option>1 Week</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="idType">ID Type</label>
+        <select id="idType" required>
+          <option value="">-- Select ID --</option>
+          <option>Citizenship</option>
+          <option>Driving License</option>
+          <option>Passport</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="idNumber">ID Number</label>
+        <input type="text" id="idNumber" placeholder="Enter ID number" required>
+      </div>
+
+      <div class="input-group">
+        <label for="payment">Payment Method</label>
+        <select id="payment" required>
+          <option value="">-- Select Payment Method --</option>
+          <option>Cash</option>
+          <option>eSewa</option>
+          <option>Khalti</option>
+          <option>Card</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="notes">Additional Notes (Optional)</label>
+        <textarea id="notes" placeholder="Any special request..."></textarea>
+      </div>
+
+      <button type="submit" class="bookBtn">Confirm Booking</button>
+
+      <p id="bookingStatus"></p>
+
+    </form>
+  </div>
+
+
+  <div class="bottom-nav">
+    <button onclick="go('index.html')">Home</button>
+    <button onclick="go('booking.html')">Booking</button>
+    <button onclick="go('support.html')">Support</button>
+    <button onclick="go('index.html')">Offers</button>
+    <button onclick="go('index.html')">My Favourites</button>
+  </div>
+
+ 
+  <script type="module" src="script.js"></script>
+</body>
+</html>

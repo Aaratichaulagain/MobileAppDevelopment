@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RentIT - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Side Navigation -->
+  <div id="sideMenu" class="side-menu">
+    <button class="close-btn" onclick="closeMenu()">&times;</button>
+    <a href="profile.html">Profile</a>
+    <a href="settings.html">Settings</a>
+  
+  </div>
+
+  <!-- Header -->
+  <div class="dashboard-header">
+    <div class="menu-logo-container">
+      <h1 class="logo">RentIT</h1>
+      <div class="hamburger-menu" onclick="openMenu()">&#9776;</div>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="searchBox">
+    <input type="text" placeholder="Search vehicles..." />
+  </div>
+
+  <!-- Categories -->
+  <h2 class="sectionTitle">Categories</h2>
+  <div class="horizontal-scroll">
+    <div class="categoryCard"><img src="https://plus.unsplash.com/premium_vector-1682304611693-08c6729f6e4a?w=900&auto=format&fit=crop&q=60" alt=""><p>Car</p></div>
+    <div class="categoryCard"><img src="https://plus.unsplash.com/premium_vector-1682269680501-f01d18d51f33?q=80&w=2960&auto=format&fit=crop" alt=""><p>Bike</p></div>
+    <div class="categoryCard"><img src="https://plus.unsplash.com/premium_vector-1720166926095-f2428cd7dd15?w=900&auto=format&fit=crop&q=60" alt=""><p>Cycle</p></div>
+  </div>
+
+  <!-- Best Deals -->
+  <h2 class="sectionTitle">Best Deals</h2>
+  <div class="horizontal-scroll">
+    <div class="dealCard">
+      <p class="dealName">Toyota Corolla</p>
+      <p class="discountText">20% OFF</p>
+      <button class="bookBtn" onclick="go('booking.html')">Book Now</button>
+    </div>
+    <div class="dealCard">
+      <p class="dealName">Honda Civic</p>
+      <p class="discountText">15% OFF</p>
+      <button class="bookBtn" onclick="go('booking.html')">Book Now</button>
+    </div>
+    <div class="dealCard">
+      <p class="dealName">Yamaha Bike</p>
+      <p class="discountText">10% OFF</p>
+      <button class="bookBtn" onclick="go('booking.html')">Book Now</button>
+    </div>
+  </div>
+
+  <h2 class="sectionTitle">Best Picks</h2>
+  <div class="horizontal-scroll">
+    <div class="pickCard">
+      <p class="pickName">BYD</p>
+      <button class="bookBtn" onclick="go('booking.html')">Book Now</button>
+    </div>
+    <div class="pickCard">
+      <p class="pickName">Suzuki Swift</p>
+      <button class="bookBtn" onclick="go('booking.html')">Book Now</button>
+    </div>
+    <div class="pickCard">
+      <p class="pickName">KTM Duke</p>
+      <button class="bookBtn" onclick="go('booking.html')">Book Now</button>
+    </div>
+  </div>
+
+ 
+  <div class="bottom-nav">
+    <button onclick="go('index.html')">Home</button>
+    <button onclick="go('booking.html')">Booking</button>
+    <button onclick="go('support.html')">Support</button>
+    <button onclick="go('index.html')">Offers</button>
+    <button onclick="go('index.html')">My Favourites</button>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

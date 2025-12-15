@@ -1,0 +1,333 @@
+/* ===== General ===== */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #e0f0f7;
+}
+
+/* ===== Header ===== */
+.dashboard-header {
+  background: #0056ff;
+  padding: 15px 20px;
+  border-radius: 0 0 12px 12px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu-logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.hamburger-menu {
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hamburger-menu:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Side Menu ===== */
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  background-color: #0056ff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.side-menu a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== Search ===== */
+.searchBox {
+  padding: 12px 16px;
+}
+
+.searchBox input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.searchBox input:focus {
+  border-color: #0056ff;
+  box-shadow: 0 0 5px rgba(0, 86, 255, 0.5);
+}
+
+/* ===== Section Titles ===== */
+.sectionTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 16px;
+  color: #333;
+}
+
+/* ===== Horizontal Scroll Cards ===== */
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  padding-left: 16px;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.categoryCard,
+.dealCard,
+.pickCard {
+  background: white;
+  border-radius: 12px;
+  margin-right: 16px;
+  padding: 12px;
+  min-width: 140px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.categoryCard:hover,
+.dealCard:hover,
+.pickCard:hover {
+  transform: translateY(-5px);
+}
+
+.categoryCard img {
+  width: 100%;
+  height: 100px; /* adjust height as needed */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.dealName {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* ===== Buttons ===== */
+.bookBtn {
+  background: #0056ff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bookBtn:hover {
+  background: #0040cc;
+}
+
+/* ===== Discount ===== */
+.discountText {
+  color: red;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* ===== Bottom Navigation ===== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: #0056ff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bottom-nav button:hover {
+  color: #0040cc;
+}
+
+/* ===== Contact Page ===== */
+.contact-container {
+  max-width: 450px;
+  margin: 30px auto 80px;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #0056ff;
+  box-shadow: 0 0 5px rgba(0,86,255,0.3);
+}
+
+#status {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+/* ===== Auth Pages ===== */
+.auth-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.auth-box {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.auth-box:hover {
+  transform: translateY(-5px);
+}
+
+.auth-box .logo {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0056ff;
+  margin-bottom: 10px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* ===== Booking Page ===== */
+.booking-form-container {
+  max-width: 450px;
+  margin: 30px auto 100px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.booking-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.booking-form-container .input-group {
+  margin-bottom: 15px;
+}
+
+.booking-form-container label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.booking-form-container input,
+.booking-form-container select,
+.booking-form-container textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.booking-form-container textarea {
+  resize: none;
+  height: 90px;
+}
+
+.booking-form-container input:focus,
+.booking-form-container select:focus,
+.booking-form-container textarea:focus {
+  border-color: #0056ff;
+  box-shadow: 0 0 5px rgba(0,86,255,0.3);
+}
+
+.booking-form-container .bookBtn {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+#bookingStatus {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: bold;
+  color: green;
+}

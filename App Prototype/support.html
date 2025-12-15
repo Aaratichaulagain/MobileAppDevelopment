@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RentIT - Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="sideMenu" class="side-menu">
+    <button class="close-btn" onclick="closeMenu()">&times;</button>
+    <a href="profile.html">Profile</a>
+    <a href="settings.html">Settings</a>
+  </div>
+
+  <div class="dashboard-header">
+    <div class="menu-logo-container">
+      <h1 class="logo">RentIT</h1>
+      <div class="hamburger-menu" onclick="openMenu()">&#9776;</div>
+    </div>
+  </div>
+
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p style="text-align:center; font-size:14px; color:#555;">
+      Have questions? Drop your message below.
+    </p>
+
+    <form id="contactForm">
+      <div class="input-group">
+        <input type="text" id="name" placeholder="Your Name" required>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Your Email" required>
+      </div>
+      <div class="input-group">
+        <textarea id="message" placeholder="Write your message..." required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Status message -->
+    <p id="status"></p>
+
+    <!-- Info box added below the form -->
+    <div class="info-box">
+      <p><i class="phone"></i> Phone: +977-9800000000</p>
+      <p><i class="email"></i> Email: support@rentit.com</p>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <button onclick="go('index.html')">Home</button>
+    <button onclick="go('booking.html')">Booking</button>
+    <button onclick="go('support.html')">Support</button>
+    <button onclick="go('index.html')">Offers</button>
+    <button onclick="go('index.html')">My Favourites</button>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

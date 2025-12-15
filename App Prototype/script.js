@@ -1,4 +1,4 @@
-// ================= Hamburger Menu Functions =================
+
 window.openMenu = function () {
   const sideMenu = document.getElementById("sideMenu");
   if (sideMenu) sideMenu.style.width = "220px";
@@ -9,14 +9,14 @@ window.closeMenu = function () {
   if (sideMenu) sideMenu.style.width = "0";
 };
 
-// ================= Page Navigation =================
+
 window.go = function (page) {
   window.location.href = page;
 };
 
-// ================= Auth & Prototype Functions =================
 
-// Login form (login.html)
+
+
 window.login = function (event) {
   event.preventDefault();
 
@@ -33,7 +33,7 @@ window.login = function (event) {
   go("index.html");
 };
 
-// Signup form (signup.html)
+
 window.signup = function (event) {
   event.preventDefault();
 
@@ -57,13 +57,13 @@ window.signup = function (event) {
   go("login.html");
 };
 
-// ================= Book Now Button (Auto-fill Vehicle) =================
+
 window.bookNow = function (vehicleName) {
   localStorage.setItem("selectedVehicle", vehicleName);
   go("booking.html");
 };
 
-// ================= Firebase Setup =================
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
 
@@ -80,7 +80,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-// ================= Contact Form Submission =================
+
 const contactForm = document.getElementById("contactForm");
 
 if (contactForm) {
@@ -113,10 +113,10 @@ if (contactForm) {
   });
 }
 
-// ================= Booking Form Submission =================
+
 const bookingForm = document.getElementById("bookingForm");
 
-// Auto-fill vehicle if selected from Book Now
+
 const savedVehicle = localStorage.getItem("selectedVehicle");
 if (savedVehicle) {
   const vehicleSelect = document.getElementById("vehicle");
@@ -144,7 +144,7 @@ if (bookingForm) {
       createdAt: new Date().toString()
     };
 
-    // Basic validation
+  
     for (let key in bookingData) {
       if (!bookingData[key] && key !== "notes") {
         alert("Please fill in all required fields.");
